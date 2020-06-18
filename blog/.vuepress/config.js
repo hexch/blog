@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Hexch\'s blog',
   description: 'This is a blog writing by Hexch',
-  base: "",
+  base: "https://hexch.github.io/blog/",
   dest: "docs/",
   theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
   themeConfig: {
