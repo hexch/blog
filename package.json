@@ -1,0 +1,20 @@
+{
+  "name": "hexchblog",
+  "version": "0.0.1",
+  "description": "hexch&#39;s blog",
+  "main": "index.js",
+  "authors": {
+    "name": "hexch",
+    "email": "hexch.dev@gmail.com"
+  },
+  "repository": "https://github.com/hexch/hexchblog",
+  "scripts": {
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/theme-blog": "^2.2.0",
+    "vuepress": "^1.3.1"
+  }
+}
