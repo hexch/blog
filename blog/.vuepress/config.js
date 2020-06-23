@@ -3,7 +3,7 @@ module.exports = {
   description: 'This is a blog writing by Hexch',
   base: "/blog/",
   dest: "docs/",
-  theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
+  theme: '@vuepress/theme-blog',
   themeConfig: {
     dateFormat: 'YYYY.MM.DD',
     /**
@@ -55,4 +55,11 @@ module.exports = {
       ],
     },
   },
+  plugins: [
+    require('./plugins/firebase'),
+  ],
+  head: [
+    ['script', { src: "https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js" }],
+    ['script', { src: "https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js" }]
+  ],
 }
